@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Wordbook from "./Wordbook";
 
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+    
+    <header className="App-header">
+    <img src={logo} className="App-logo" alt="logo" />
+    <main> 
+         <Wordbook/>
+      </main>
+      <footer className="App-footer"> 
+      <small> coded by Nneka Umerah  </small>
+
+      </footer>
+       </header> 
         
-        <h1> 
-        <div className="btn btn-primary">
-          hello 
-          </div>
-          </h1>
-          
-        
-      </header>
     </div>
+    </div>
+    
   );
 }
 
-export default App;
